@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background: rgb(13, 18, 41);
+}
+/* flexbox */
+.maincontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.this{
+    color: red;
+    align-self: flex-end;
+}
+
+
+/* Navigation bar in main layout */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+.container{
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+}
+header{
+    position: fixed;
+    top: 0;
+    height: 100px;
+    width: 100%;
+    background: #212428;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #565555;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.logo span{
+    color: #ff014f;
+}
+header nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+header nav ul li{
+    color: #c4cfde;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+header nav ul .active_menu{
+    color: #fff;
+}
+header nav ul li:hover{
+    color: #fff;
+}
+
+.hamburger{
+    position: relative;
+    appearance: none;
+    width: 30px;
+    background: none;
+    outline: none;
+    /* display: none; */
+    outline: none;
+    border: none;
+    scale: 0.8;
+    cursor: pointer;
+}
+.hamburger .bar,
+.hamburger::after,
+.hamburger::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    margin: 6px 0;
+    background: #ff014f;
+    transition: 0.4s;
+}
