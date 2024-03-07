@@ -15,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${poppins.className}`}>
+      <body className={`${poppins.className} text-sm sm:text-xl`}>
         <AnimationProvider >
           {children}
         </AnimationProvider>

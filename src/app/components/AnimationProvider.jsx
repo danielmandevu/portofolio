@@ -9,13 +9,13 @@ export default function AnimationProvider({children}) {
     const pathName = usePathname();
   return (
     <AnimatePresence mode="wait">
-        <div key={pathName} className="w-screen h-screen text-white px-4 sm:px-8 md:px-12 lg:px-20">
-          <motion.div
+        <div key={pathName} className="w-screen h-screen text-white px-4 sm:px-8">
+          {/* <motion.div
             className="h-screen w-screen fixed bg-black z-40"
             animate={{height:"0vh"}}
             exit={{height:"120vh"}}
             transition={{duration:0.5, ease:"easeOut"}}
-           />
+           /> */}
            <motion.div
             className="fixed m-auto right-0 left-0 top-0 bottom-0 text-[#ff104f] text-6xl w-fit h-fit z-50"
             initial={{opacity:1}}
